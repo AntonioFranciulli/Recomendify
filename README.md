@@ -53,12 +53,12 @@ Output:
     No se encontro recorrido
 ```
 
-In case the `origin` or `destino` are not valid songs, an error message is printed.
+In case `origin` or `destino` are not valid songs, an error message is printed.
 
 ### Most important songs
 Prints the `n` most important songs on the graph network by using the concept of centrality from the [PageRank algorithm](https://es.wikipedia.org/wiki/PageRank). The songs are sorted from most to least important.
 
-* Comnand: `mas_importantes`.
+* Command: `mas_importantes`.
 * Input Parameters: `n`, amount of important songs requested.
 * Example:
 ```
@@ -76,8 +76,8 @@ Output:
 Using the idea of a personalized PageRank that is seen as RandomWalks of various lenghts organized, and some ideas extracted from this [Stanford handout](https://web.archive.org/web/20201111231436/http://web.stanford.edu/class/msande233/handouts/lecture8.pdf), this command gives recommendations of either users with similar tastes of certain user or song recommendations based on a small song list given by the user.
 
 * Command: `recomendacion`.
-* Input Parameters: `usuarios/canciones`, si se espera una recomendación para seguir un usuario o para escuchar una cancion; `n`, la cantidad de usuarios o canciones a recomendar; `cancion1 >>>> cancion2 >>>> ... >>>> cancionK`, las canciones que ya sabemos que le gustan a la persona a recomendar (que podrías ser vos misma ;-)).
-* Example:
+* Input Parameters: `usuarios/canciones`, the type of recommendation that we are requesting (either users or songs); `n`, the amount of users or songs to be recommended; `cancion1 >>>> cancion2 >>>> ... >>>> cancionK`, if we want a song recommendations, we need to provide a list of songs that we like.
+* Examples:
 ```
 Input:
     recomendacion canciones 10 Love Story - Taylor Swift >>>> Toxic - Britney Spears >>>> I Wanna Be Yours - Arctic Monkeys >>>> Hips Don't Lie (feat. Wyclef Jean) - Shakira >>>> Death Of A Martian - Red Hot Chili Peppers
@@ -94,7 +94,7 @@ Prints a cicle of a certain lenght (with the songs of the graph) that starts wit
 
 * Command: `ciclo`.
 * Input Parameters: `n` and `cancion`.
-* Example:
+* Examples:
 ```
 Input:
 
@@ -115,7 +115,7 @@ Prints n amount of songs that are exactly at `n` distance of the song given by p
 
 * Command: `rango`.
 * Input Parameters: `n` and `cancion`. 
-* Example:
+* Examples:
 ```
 Input:
 
