@@ -16,6 +16,8 @@ While processing each line, we created and populated 2 different graphs:
 * An undirected bipartite graph that connected users and songs if a user liked a specific song.
 * An undirected graph that connected songs between each other if they appeared in a playlist of a given user. 
 
+As well as recommendation related functions, some other useful commands were implemented.
+
 ## Commands and Usage
 In order to use Recomendify, download both the code and the [processed .TSV file](https://drive.google.com/file/d/19piQbkrmO3GAt0ItekldWK4TbnMtAyGi/view?usp=sharing). Make sure the .TSV file into the same directory as the rest of the source code. 
 
